@@ -11,6 +11,16 @@ body {
   align-items: center;
 }
 
+#topAbout {
+  height: 60px;
+  width: 100vw;
+}
+
+#topProjects {
+  height: 35px;
+  width: 100vw;
+}
+
 .nav {
   padding: 10px;
   background-color: #E7EEE9;
