@@ -3,92 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="port_style.css">
+    <meta name="description" content="Portfolio of Alisha Shamsher, a junior software developer based in London.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="port_style.css">
+    <title>Alisha Shamsher | Junior Software Developer</title>
 </head>
 <body>
-    <p id="top"></p>
-    <nav class="nav">
-        <div id="brand">
-            <a href="#top">Alisha Shamsher</a>
-        </div>
-        <div class="links">
-            <a href="#topAbout">About Me</a>
-            <a href="#topProjects">Projects</a>
-            <a href="#topContacts">Contact</a>
+    <nav class="nav" aria-label="Main navigation">
+        <a class="nav__brand" href="#top">Alisha Shamsher</a>
+
+        <div class="nav__links">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
+
     <main class="main-body" id="top">
         <header class="header">
-            <div> 
-                <h1 id="role">Junior Software Developer</h1>
-            </div>
-            <div id="intro">
-                <p>Currently looking for junior software engineering or data-focused roles in London.</p>
-            </div>
+            <h1>Junior Software Developer</h1>
+            <p>
+                Building full-stack applications, REST APIs and database-driven
+                projects, and looking for junior software engineering roles in London.
+            </p>
+            <a class="primary-button" href="#projects">View My Projects</a>
         </header>
-        <div id="topAbout">
-        </div>
-        <section class="about">
-            <h2 id="about">About Me</h2>
-            <div class="about-para">
-                <img class="about about__profile-pic" src="./Profile_pic.jpg" alt="profile picture" width="200">
-                <p id="aboutPara">I’m an <span id="emphasis">aspiring software developer</span> with a background in data analysis and biological research. I have recently completed a degree in Biological Sciences at Royal Veterinary College. I’m currently training in software development, building skills in JavaScript, CSS, and HTML. I’m particularly interested in creating tools and products that are intuitive and user-friendly. I enjoy solving problems, video games, and reading about new technologies.</p>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+
+            <div class="about__content">
+                <img
+                    class="about__profile-pic"
+                    src="./Profile_pic.jpg"
+                    alt="Alisha Shamsher"
+                    width="200"
+                >
+
+                <p>
+                    I’m a <span class="emphasis">junior software developer</span>
+                    with a background in biological science and data analysis. After
+                    completing my Biological Sciences degree at the Royal Veterinary
+                    College, I trained in full-stack software development with _nology.
+                    I have experience building applications with JavaScript, Java,
+                    Spring Boot, Node.js and SQL, as well as REST APIs, relational
+                    databases and automated testing. I enjoy solving problems and
+                    creating applications that are intuitive, accessible and useful.
+                </p>
             </div>
         </section>
 
-        <section class="skills">        
+        <section class="skills" id="skills">
             <h2>My Technical Skills</h2>
-            <p id="skillPara">Technologies I’m currently learning and building with:</p>
-            <div class="skill-icons">
-                <img src="./JavaScript.png" alt="javascript icon">
-                <img src="./CSS3.png" alt="css icon">
-                <img src="./HTML5.png" alt="HTML icon">
-                <img src="./SCSS.png" alt="SCSS icon">
-                <img src="./Git.png" alt="Git icon">
+            <p>Technologies I have used in training and project work:</p>
+
+            <div class="skills__categories">
+                <article class="skills__category">
+                    <h3>Languages & Frontend</h3>
+                    <p>JavaScript • Java • SQL • HTML • CSS • SCSS</p>
+                </article>
+
+                <article class="skills__category">
+                    <h3>Backend & APIs</h3>
+                    <p>Spring Boot • Node.js • Hapi • REST APIs</p>
+                </article>
+
+                <article class="skills__category">
+                    <h3>Databases</h3>
+                    <p>PostgreSQL • MySQL • Prisma • JPA/Hibernate</p>
+                </article>
+
+                <article class="skills__category">
+                    <h3>Testing & Tools</h3>
+                    <p>Jest • Vitest • Git • GitHub • Postman</p>
+                </article>
             </div>
         </section>
-        <p id="topProjects"></p>
-        <section class="project-section">
-            <h2 id="projectTitle">My Projects</h2>
-                <div class="project">
-                    <div class="project__image">
-                        <img  src="./Project.png" alt="Project">
-                        <h4>Project 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum pariatur laborum quam adipisci animi </p>
-                        <button>View Code</button>
-                        <button>Preview</button>
+
+        <section class="project-section" id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <article class="project__card">
+                    <img src="./Reading_tracker.png" alt="Reading Tracker project preview">
+                    <h3>Reading Tracker</h3>
+                    <p class="project__technologies">
+                        JavaScript • Node.js • Hapi • PostgreSQL • Prisma • Jest
+                    </p>
+                    <p>
+                        A full-stack application for managing and tracking books,
+                        featuring RESTful CRUD functionality, database integration
+                        and automated unit testing.
+                    </p>
+                    <div class="project__buttons">
+                        <a class="project__button" href="https://github.com/ASham-02/Reading-tracker/tree/main" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a class="project__button" href="https://reading-tracker-1-t5y5.onrender.com" target="_blank" rel="noopener noreferrer">Live Site</a>
                     </div>
-                    <div class="project__image">
-                        <img  src="./Project.png" alt="Project">
-                        <h4>Project 2</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum pariatur laborum quam adipisci animi </p>
-                        <button>View Code</button>
-                        <button>Preview</button>
+                </article>
+
+                <article class="project__card">
+                    <img src="./twenty-sided-dice.png" alt="DnD Character Creator project preview">
+                    <h3>DnD Character Creator</h3>
+                    <p class="project__technologies">
+                        Java • Spring Boot • MySQL • REST APIs • JavaScript
+                    </p>
+                    <p>
+                        A full-stack character creation application developed in a
+                        five-person team. I focused on backend CRUD functionality and
+                        connecting element data to character creation.
+                    </p>
+                    <div class="project__buttons">
+                        <a class="project__button" href="https://github.com/ASham-02/DnD-Group-Project" target="_blank" rel="noopener noreferrer">Backend Code</a>
+                        <a class="project__button" href="https://github.com/ASham-02/FrontEnd-Group-Project" target="_blank" rel="noopener noreferrer">Frontend Code</a>
                     </div>
-                    <div class="project__image">
-                        <img  src="./Project.png" alt="Project">
-                        <h4>Project 3</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum pariatur laborum quam adipisci animi </p>
-                        <button>View Code</button>
-                        <button>Preview</button>
+                </article>
+
+                <article class="project__card">
+                    <img src="./Pokemon.png" alt="Pokémon Memory Match Game preview">
+                    <h3>Pokémon Memory Match Game</h3>
+                    <p class="project__technologies">JavaScript • HTML • SCSS</p>
+                    <p>
+                        An interactive browser game with card-matching logic, a move
+                        counter, restart functionality and a clear win state.
+                    </p>
+                    <div class="project__buttons">
+                        <a class="project__button" href="https://github.com/ASham-02/game-project" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a class="project__button" href="https://asham-02.github.io/game-project/" target="_blank" rel="noopener noreferrer">Live Site</a>
                     </div>
-                </div>
-            </section>
-        </section>
-        <p id="topContacts"></p>
-        <footer class="contact-section" >
-            <h4 id="contact">Contact</h4>
-            <p>Feel free to reach out to me.</p>
-            <div class="contact-icons">
-                <a href="https://github.com/ASham-02"><img src="GI.png" alt="Git icon"></a>
-                <a href="https://www.linkedin.com/in/alisha-s-13855b259/" ><img src="LI.png" alt="Link icon"></a>
-                <a href="mailto:alisha.shamsher@nology.io" ><img src="outlook.png" alt="email icon"></a>
+                </article>
             </div>
-        </footer>
+        </section>
     </main>
+
+    <footer class="contact-section" id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me.</p>
+
+        <div class="contact-icons">
+            <a href="https://github.com/ASham-02" target="_blank" rel="noopener noreferrer" aria-label="Visit Alisha's GitHub profile">
+                <img src="./GI.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/alisha-s-13855b259/" target="_blank" rel="noopener noreferrer" aria-label="Visit Alisha's LinkedIn profile">
+                <img src="./LI.png" alt="">
+            </a>
+            <a href="mailto:alisha.shamsher@nology.io" aria-label="Email Alisha">
+                <img src="./outlook.png" alt="">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
